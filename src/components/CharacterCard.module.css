@@ -1,0 +1,111 @@
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  background: linear-gradient(145deg, #3a3f4b, #2d313a);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid #40454f;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  border-color: #61dafb;
+}
+
+.imageContainer {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.statusBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.statusBadge.alive {
+  color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+.statusBadge.dead {
+  color: #f44336;
+  border: 1px solid #f44336;
+}
+
+.statusBadge.unknown {
+  color: #9e9e9e;
+  border: 1px solid #9e9e9e;
+}
+
+.content {
+  padding: 20px;
+}
+
+.name {
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.details {
+  margin-bottom: 15px;
+}
+
+.species, .location {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.label {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.viewMore {
+  text-align: center;
+  color: #61dafb;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding-top: 10px;
+  border-top: 1px solid #40454f;
+  transition: color 0.3s ease;
+}
+
+.card:hover .viewMore {
+  color: #21a1f1;
+}
